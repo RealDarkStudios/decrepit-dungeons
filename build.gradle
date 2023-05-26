@@ -152,6 +152,7 @@ dependencies {
     // Examples using mod jars from ./libs
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
     implementation fg.deobf("net.darkstudios.rdslib:rdslib:${mc_ver}-${rdslib_ver}")
+    implementation fg.deobf("net.darkstudios.mines:mines:${mc_ver}-${mm_ver}")
 
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html

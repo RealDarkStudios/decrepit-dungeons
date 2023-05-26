@@ -1,7 +1,7 @@
 package net.darkstudios.dungeons.datagen;
 
 import net.darkstudios.dungeons.DecrepitDungeons;
-import net.darkstudios.dungeons.items.ModItems;
+import net.darkstudios.dungeons.items.DDItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -17,9 +17,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.KEY);
-        simpleItem(ModItems.GOLD_KEY);
-        simpleItem(ModItems.DEMON_KEY);
+        simpleItem(DDItems.KEY);
+        simpleItem(DDItems.GOLD_KEY);
+        simpleItem(DDItems.DEMON_KEY);
     }
 
 

@@ -1,7 +1,7 @@
 package net.darkstudios.dungeons;
 
 import com.mojang.logging.LogUtils;
-import net.darkstudios.dungeons.items.ModItems;
+import net.darkstudios.dungeons.items.DDItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,7 +23,7 @@ public class DecrepitDungeons {
 
         modEventBus.addListener(this::commonSetup);
 
-        ModItems.register(modEventBus);
+        DDItems.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
