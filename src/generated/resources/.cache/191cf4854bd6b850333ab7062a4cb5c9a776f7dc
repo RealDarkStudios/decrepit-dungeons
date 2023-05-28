@@ -1,4 +1,5 @@
-// 1.19.2	2023-05-26T03:33:45.040787	Item Models: decrepitdungeons
-479445692e779f55f87d0c4f04c485eb35a9abc1 assets/decrepitdungeons/models/item/bronze_coin.json
-2f4797261ca10d86f3f3722eb23d62b53570ae80 assets/decrepitdungeons/models/item/gold_coin.json
-491298e28228df06fdd65477cfbdf329b167e63b assets/decrepitdungeons/models/item/silver_coin.json
+// 1.19.2	2023-05-26T16:22:17.8808496	Item Models: decrepitdungeons
+ea709eac6dba43c2207567c189cb13cb3ad37347 assets/decrepitdungeons/models/item/demon_key.json
+7c88b0b9dc3e37f67f8e276bbdd38061ef065440 assets/decrepitdungeons/models/item/forgium_key.json
+e86298ae3e6572c0682041c64cd83a7545f713ab assets/decrepitdungeons/models/item/gold_key.json
+b77bec6155eab528e11da31a2b9a2358bd9fee85 assets/decrepitdungeons/models/item/key.json

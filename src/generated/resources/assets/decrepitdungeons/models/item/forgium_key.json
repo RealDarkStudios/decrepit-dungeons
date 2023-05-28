@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "decrepitdungeons:item/gold_coin"
+    "layer0": "decrepitdungeons:item/forgium_key"
   }
 }

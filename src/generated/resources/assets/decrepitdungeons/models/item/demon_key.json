@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "decrepitdungeons:item/silver_coin"
+    "layer0": "decrepitdungeons:item/demon_key"
   }
 }

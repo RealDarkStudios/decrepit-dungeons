@@ -2,9 +2,11 @@ package net.darkstudios.dungeons;
 
 import com.mojang.logging.LogUtils;
 import net.darkstudios.dungeons.items.DDItems;
+import net.darkstudios.mines.items.MMItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -23,6 +25,9 @@ public class DecrepitDungeons {
 
         modEventBus.addListener(this::commonSetup);
 
+        if (ModList.get().isLoaded("masterfulmines")) {
+            MMItems.register(modEventBus);
+        }
         DDItems.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

@@ -1,13 +1,18 @@
 package net.darkstudios.dungeons.items.custom;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.registries.RegistryObject;
 
 public class KeyItem extends Item {
-    public KeyItem(Properties pProperties) {
+    private final Item ingot;
+
+    public KeyItem(Properties pProperties, ItemLike pIngot) {
         super(pProperties);
+        this.ingot = pIngot.asItem();
     }
 
-    public static Item create(Properties pProperties) {
-        return new KeyItem(pProperties);
+    public static Item create(Properties pProperties, ItemLike pIngot) {
+        return new KeyItem(pProperties, pIngot);
     }
 }

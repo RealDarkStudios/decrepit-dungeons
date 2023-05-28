@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(DDItems.KEY);
         simpleItem(DDItems.GOLD_KEY);
         simpleItem(DDItems.DEMON_KEY);
+        simpleItem(DDItems.FORGIUM_KEY);
     }
 
 
