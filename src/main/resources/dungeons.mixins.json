@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.darkstudios.dungeons.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "dungeons.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

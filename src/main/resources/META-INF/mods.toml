@@ -1,0 +1,48 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "[46,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license = "MIT"
+#issueTrackerURL="http://my.issue.tracker/" #optional
+[[mods]] #mandatory
+modId = "decrepitdungeons" #mandatory
+version = "1.20-0.1.5" #mandatory
+displayName = "Decrepit Dungeons" #mandatory
+#updateJSONURL="http://myurl.me/" #optional
+#displayURL="http://example.com/" #optional
+#logoFile="rdslib.png" #optional
+#credits="Thanks for this example mod goes to Java" #optional
+authors = "RealDarkStudios" #optional
+displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
+
+description = '''
+A dungeon mod by RealDarkStudios.
+
+Explore the depths of the dungeons added by this mod. Who knows what you will find?
+'''
+[[dependencies.decrepitdungeons]] #optional
+# the modid of the dependency
+modId = "forge" #mandatory
+mandatory = true #mandatory
+versionRange = "[46,)" #mandatory
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies.decrepitdungeons]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20,1.20.1)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.decrepitdungeons]]
+modId = "rdslib"
+mandatory = true
+versionRange = "[1.20-0.2.0.1,1.20-0.3.0)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.decrepitdungeons]]
+modId = "masterfulmines"
+mandatory = false
+versionRange = "[1.20-0.2.0.5,1.20-0.3.0)"
+ordering = "BEFORE"
+side = "BOTH"
