@@ -2,7 +2,7 @@ package net.darkstudios.dungeons.datagen;
 
 import net.darkstudios.dungeons.DecrepitDungeons;
 import net.darkstudios.dungeons.items.DDItems;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
@@ -10,9 +10,9 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItemModelProvider extends ItemModelProvider {
-    public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, DecrepitDungeons.MODID, existingFileHelper);
+public class DDItemModelProvider extends ItemModelProvider {
+    public DDItemModelProvider(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
+        super(packOutput, DecrepitDungeons.MODID, existingFileHelper);
     }
 
     @Override

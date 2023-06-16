@@ -2,7 +2,6 @@ package net.darkstudios.dungeons.items.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.registries.RegistryObject;
 
 public class KeyItem extends Item {
     private final Item ingot;
