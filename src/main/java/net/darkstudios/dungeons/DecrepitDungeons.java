@@ -1,6 +1,8 @@
 package net.darkstudios.dungeons;
 
 import com.mojang.logging.LogUtils;
+import net.darkstudios.dungeons.blocks.DDBlocks;
+import net.darkstudios.dungeons.compat.Compats;
 import net.darkstudios.dungeons.items.DDItems;
 import net.darkstudios.mines.items.MMItems;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,17 +27,17 @@ public class DecrepitDungeons {
 
         modEventBus.addListener(this::commonSetup);
 
-        if (ModList.get().isLoaded("masterfulmines")) {
+        if (Compats.MASTERFUL_MINES) {
             MMItems.register(modEventBus);
         }
         DDItems.register(modEventBus);
+        DDBlocks.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         LOGGER.info("Decrepit Dungeons is starting");
-
     }
 
     @SubscribeEvent

@@ -10,8 +10,8 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItemModelProvider extends ItemModelProvider {
-    public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
+public class DDItemModelProvider extends ItemModelProvider {
+    public DDItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
         super(generator, DecrepitDungeons.MODID, existingFileHelper);
     }
 

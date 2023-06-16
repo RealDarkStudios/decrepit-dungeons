@@ -8,15 +8,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = DecrepitDungeons.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DataGenerators {
+public class DDDataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-        generator.addProvider(true, new ModRecipeProvider(generator));
-        generator.addProvider(true, new ModLootTableProvider(generator));
-        generator.addProvider(true, new ModBlocksStatesProvider(generator, existingFileHelper));
-        generator.addProvider(true, new ModItemModelProvider(generator, existingFileHelper));
+        generator.addProvider(true, new DDRecipeProvider(generator));
+        generator.addProvider(true, new DDLootTableProvider(generator));
+        generator.addProvider(true, new DDBlocksStatesProvider(generator, existingFileHelper));
+        generator.addProvider(true, new DDItemModelProvider(generator, existingFileHelper));
     }
 }

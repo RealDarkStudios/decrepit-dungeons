@@ -4,8 +4,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
-public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    public ModRecipeProvider(DataGenerator pGenerator) {
+public class DDRecipeProvider extends RecipeProvider implements IConditionBuilder {
+    public DDRecipeProvider(DataGenerator pGenerator) {
         super(pGenerator);
     }
 }
